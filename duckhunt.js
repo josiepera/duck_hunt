@@ -5,6 +5,10 @@ window.onload = function() {
 
   // 1. Create a <div> with the class "duck" and add it to the body.  Do this step by step
   // ( 1. create the element
+  const newDiv = document.createElement('div');
+  const duck = newDiv.classList.add('duck')
+
+  document.querySelector('body').appendChild('newDiv')
   //   2. add a class to the element
   //   3. append the element to the body )
 
