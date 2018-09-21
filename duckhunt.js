@@ -84,8 +84,8 @@ for(i = 0; i < 5; i++){
   //     the duck when you click on it!
 
   function shootDuck (event) {
-    if (event.target.classList[0] === 'duck'){
-      event.target.classList.add('shot')
+    if (event.target.classList[0] === 'duck'){ // worked with other classmates to get to this
+      event.target.classList.add('shot')  //Would like a refresher on event
     }
 
 setTimeout(removeDuck, 1000);
