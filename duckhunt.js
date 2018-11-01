@@ -9,12 +9,14 @@ window.onload = function() {
   //   3. append the element to the body )
   const newDiv = document.createElement('div');
   const duck = newDiv.classList.add('duck');
-  body.appendChild(newDiv)
+  body.appendChild(newDiv) //Can use appendChild or append
+
+
   // 2. Next, use setInterval to toggle the "flap" class on the duck every 250 ms (1/4 second)
   // https://www.w3schools.com/jsref/met_win_setinterval.asp
 
 
-  setInterval(function(){newDiv.classList.toggle('flap')},250);
+  setInterval(function(){newDiv.classList.toggle('flap')},250); //every 250 m/s, I want this to happen
 
    function duckFlap() {
      newDiv.style.top = (Math.random() * window.innerHeight) + 'px';
@@ -45,6 +47,7 @@ function createDuck() {
   const newDiv = document.createElement('div');
   const duck = newDiv.classList.add('duck');
   body.appendChild(newDiv)
+
   setInterval(function(){newDiv.classList.toggle('flap')},250);
 
    function duckFlap() {
@@ -57,9 +60,6 @@ function createDuck() {
 
 return newDiv;
 }
-
-// createDuck();
-
 
 
   // 7. Now, let's create lots of ducks!  Use a "for" loop to create 5 ducks
@@ -88,7 +88,7 @@ for(i = 0; i < 5; i++){
       event.target.classList.add('shot')  //Would like a refresher on event
     }
 
-setTimeout(removeDuck, 1000);
+ setTimeout(removeDuck, 1000);
     // function removeDuck() {
     // let ducks = document.querySelector('.shot')
     // ducks.remove();
@@ -106,7 +106,7 @@ setTimeout(removeDuck, 1000);
 function removeDuck() {
 let ducks = document.querySelector('.shot')
 ducks.remove();
-checkForWinner();
+checkForWinner();  //Checking for the winner everytime you shoot a duck
 
 }
 
